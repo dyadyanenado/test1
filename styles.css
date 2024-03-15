@@ -13,10 +13,9 @@
     }
 }
 .div-2 {
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
-    gap: 10px;
-    padding: 4px 0 4px 10px;
+    min-width: 1000px;
 }
 @media (max-width: 991px) {
     .div-2 {
@@ -26,7 +25,6 @@
 }
 .div-3 {
     color: var(--Primary-100, #fc552f);
-    flex-grow: 1;
     margin: auto 0;
     font: 500 28px Poppins, sans-serif;
 }
@@ -47,15 +45,12 @@
     }
 }
 .div-5 {
-    justify-content: center;
     align-items: center;
     display: flex;
     color: var(--Black-50, #6e727e);
-    flex-grow: 1;
-    flex-basis: 0;
-    width: fit-content;
-    margin: auto 0;
-    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 @media (max-width: 991px) {
     .div-5 {
@@ -63,11 +58,6 @@
         white-space: initial;
         padding: 0 20px;
     }
-}
-.div-6 {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
 }
 @media (max-width: 991px) {
     .div-6 {
@@ -93,6 +83,8 @@
     background-color: var(--Primary-100, #fc552f);
     color: var(--white-100, #fff);
     padding: 16px 34px;
+    height: 24px;
+    margin: auto 0;
 }
 @media (max-width: 991px) {
     .div-11 {
@@ -107,7 +99,8 @@
     align-items: center;
     background-color: #fff;
     display: flex;
-    width: 100%;
+    width: 1000px;
+    margin: 0 auto;
     padding: 80px 60px;
 }
 @media (max-width: 991px) {
@@ -335,15 +328,12 @@
         max-width: 100%;
     }
 }
-.div-29 {
-}
 @media (max-width: 991px) {
     .div-29 {
         max-width: 100%;
     }
 }
 .div-30 {
-    gap: 20px;
     display: flex;
 }
 @media (max-width: 991px) {
@@ -378,20 +368,23 @@
     }
 }
 .div-32 {
-    stroke-width: 5.646px;
     border-color: rgba(255, 255, 255, 1);
     border-style: solid;
     border-width: 6px;
     background-color: var(--Black-100, #07070c);
     border-radius: 50%;
-    justify-content: center;
     align-items: center;
-    white-space: nowrap;
-    width: 93px;
-    height: 93px;
-    margin: auto 0;
-    padding: 0 30px;
+    min-width: 82px;
+    height: 82px;
     font: 39px Poppins, sans-serif;
+    text-align: center;
+    font-weight: 500;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 75px;
+    right: 700px;
 }
 @media (max-width: 991px) {
     .div-32 {
@@ -412,6 +405,7 @@
     flex-direction: column;
     white-space: nowrap;
     padding: 39px 67px 25px;
+
 }
 @media (max-width: 991px) {
     .div-34 {
@@ -466,8 +460,10 @@
     aspect-ratio: 0.88;
     object-fit: auto;
     object-position: center;
-    width: 100%;
     flex-grow: 1;
+    min-width: 234px;
+    border-radius: 40px;
+    object-fit:cover;
 }
 @media (max-width: 991px) {
     .img {
@@ -476,24 +472,34 @@
 }
 .img-2 {
     aspect-ratio: 1.82;
+    object-position: center;
+    max-width: 486px;
+    object-fit:cover;
+    align-self: end;
+    min-width: 234px;
+    border-radius: 40px;
+    object-fit:cover;
+}
+.img-3 {
+    aspect-ratio: 0.88;
     object-fit: auto;
     object-position: center;
-    width: 486px;
-    align-self: end;
-    margin-top: 12px;
-    max-width: 100%;
+    flex-grow: 1;
+    border-radius: 40px;
+    object-fit:auto;
 }
 
-
-
+.img-4 {
+    min-width: none;
+}
 
 .div-40 {
     justify-content: center;
     background-color: #fff;
     display: flex;
-    width: 100%;
+    max-width: 1100px;
     flex-direction: column;
-    padding: 80px;
+    margin: 0 auto;
 }
 @media (max-width: 991px) {
     .div-40 {
@@ -804,9 +810,10 @@
     justify-content: center;
     background-color: var(--Primary-10, #fffcfb);
     display: flex;
-    width: 100%;
+    max-width: 1000px;
     flex-direction: column;
     padding: 50px;
+    margin: 0 auto;
 }
 @media (max-width: 991px) {
     .div-64 {
@@ -1240,9 +1247,8 @@
     justify-content: center;
     background-color: #07070c;
     display: flex;
-    width: 100%;
-    flex-direction: column;
     padding: 50px;
+    margin: 0 auto;
 }
 @media (max-width: 991px) {
     .div-93 {
@@ -1255,6 +1261,8 @@
     border-radius: 60px;
     display: flex;
     flex-direction: column;
+    
+    max-width: 1000px;
     padding: 51px 40px;
 }
 @media (max-width: 991px) {
